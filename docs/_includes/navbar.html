@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{ '' | relative_url }}">
+  <a class="navbar-brand" href="{{ site.baseurl }}{% link index.md %}">
     <img src="{{ 'assets/img/logo-simple.png' | relative_url }}" height="30" alt="">
     {{ site.title }}
   </a>
@@ -9,13 +9,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="{{ '' | relative_url }}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ site.baseurl }}{% link index.md %}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Branding</a>
+        <a class="nav-link" href="{{ site.baseurl }}{% link branding.md %}">Branding</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Product</a>
+        <a class="nav-link" href="{{ site.baseurl }}{% link product.md %}">Product</a>
       </li>
     </ul>
   </div>
